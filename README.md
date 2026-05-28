@@ -1,15 +1,15 @@
 # British Columbia-Python-Calliope
-This repository contains Calliope and Python-based models designed to assess the potential of British Columbia, Canada,
+This repository contains Python and Calliope-based models designed to assess the potential of British Columbia, Canada,
 to meet local jet fuel demand from 2030 to 2050, comparing both fossil and renewable pathways.
 
 ---
 
 ## Overview
 
-There are two directories in this project, namely _Calliope_Modeling_ and _Economic_Uncertainty_.
+There are two directories in this project, namely _Calliope_Modeling_ and _Python_Economic_Uncertainty_.
 - **_Calliope_Modeling_** contains the Calliope modeling files for the optimal planning of the base and SAF scenarios
 from 2030 to 2050.
-- **_Economic_Uncertainty_** includes Python files developed for economic uncertainty analysis.
+- **_Python_Economic_Uncertainty_** includes Python files developed for economic uncertainty analysis.
 
 The relevant files within each directory and their functions are explained in the following sections.
 
@@ -33,7 +33,7 @@ limiting the production capacity of each technology under the base scenario.
 
 ## Economic uncertainty analysis
 
-Within the _Economic_Uncertainty_ directory, Python files have been developed to simulate the effect of
+Within the _Python_Economic_Uncertainty_ directory, Python files have been developed to simulate the effect of
 uncertain input cost parameters on the economic behavior of the system. A Probabilistic Nonparametric Uncertainty method
 was implemented for different scenarios and decades.
 
