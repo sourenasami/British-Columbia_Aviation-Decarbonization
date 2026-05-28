@@ -1,0 +1,53 @@
+import:
+  - 'configurations/techs.yaml'
+  - 'configurations/locations.yaml'
+
+
+model:
+    name: BC's Jet Fuel Production Capacity
+    calliope_version: 0.6.10
+    timeseries_data_path: 'timeseries_data'
+    subset_time: ['2024-01-01', '2024-01-01']
+
+
+
+run:
+    solver: cbc
+    mode: plan
+    ensure_feasibility: true
+    bigM: 1e6
+    zero_threshold: 1e-6
+    objective_options:
+        cost_class: {'monetary': 0, 'GHG_emissions': 1}
+
+
+
+group_constraints:
+    Limiting_GtL:
+        techs: ['GtL_ATR+CCS_aggressive', 'GtL_SMR+CCS_aggressive']
+        energy_cap_max: 24080                         # GJ
+
+    Limiting_CtL:
+        techs: ['CtL+CCS_aggressive']
+        energy_cap_max: 27520                         # GJ
+
+    Limiting_PtL:
+        techs: ['PtL+CCS_aggressive']
+        energy_cap_max: 3196                          # GJ
+
+    Limiting_BtL:
+        techs: ['BtL_FT+CCS_aggressive']
+        energy_cap_max: 1522                          # GJ
+
+    Limiting_BtL_HEFA:
+        techs: ['BtL_HEFA']
+        energy_cap_max: 1374                          # GJ
+
+    Limiting_BtL_CHJ:
+        techs: ['BtL_CHJ']
+        energy_cap_max: 1374                          # The same as HEFA
+
+    Limiting_BtL_AtJ:
+        techs: ['BtL_AtJ_starch', 'BtL_AtJ_wood']
+        energy_cap_share_max: 3600                     # GJ
+

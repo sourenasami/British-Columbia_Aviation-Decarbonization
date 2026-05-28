@@ -1,0 +1,41 @@
+# This file defines locations (BC)
+
+locations:
+
+    British_Columbia_2050:
+        coordinates: {'lat': 49.2, 'lon': -122.9}
+        techs:
+            demand_jet_fuel:
+                constraints:
+                    resource: file=demand_jet_fuel_GJ.csv
+            demand_power:
+            CtL+CCS_aggressive:
+            GtL_ATR+CCS_aggressive:
+            GtL_SMR+CCS_aggressive:
+            PtL+CCS_aggressive:
+            BtL_FT+CCS_aggressive:
+            BtL_HEFA:
+            BtL_CHJ:
+            BtL_AtJ_starch:
+            BtL_AtJ_wood:
+            Power_grid:
+            Renewable_H2:
+            Coal:
+                constraints:
+                    energy_cap_max: 75000                   # GJ
+            NG:
+                constraints:
+                    energy_cap_max: 210958                  # GJ
+            Renewable_electricity:
+                constraints:
+                    energy_cap_max: 23744                   # GJ
+            forest_residues:
+                constraints:
+                    energy_cap_max: 1644                    # GJ
+            Rapeseed_oil:
+                constraints:
+                    energy_cap_max: 601                     # GJ
+            Starch:
+                constraints:
+                    energy_cap_max: 368                     # GJ
+

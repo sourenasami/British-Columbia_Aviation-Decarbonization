@@ -1,0 +1,156 @@
+# This file contains jet fuel production processes from renewable feedstocks
+
+
+techs:
+
+    PtL+CCS_aggressive:
+        essentials:
+            name: 'PtL+CCS_aggressive'
+            color: DarkSlateGray
+            parent: conversion_plus
+            carrier_in: electricity
+            carrier_out: liquid_fuel
+            carrier_out_2: power
+            primary_carrier_out: liquid_fuel
+        constraints:
+            energy_eff: 0.416
+            carrier_ratios.carrier_out_2.power: 0.114
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                energy_cap: 0
+                om_annual: 0
+                om_prod: 0
+                om_con: 0.0077
+            GHG_emissions:
+                om_prod: 18.08                                      # kgCO2/GJ(liquid fuel)
+
+
+
+    BtL_FT+CCS_aggressive:
+        essentials:
+            name: 'BtL_FT+CCS_aggressive'
+            color: MediumAquaMarine
+            parent: conversion_plus
+            carrier_in: forest_residues
+            carrier_in_2: power
+            primary_carrier_in: forest_residues
+            carrier_out: liquid_fuel
+        constraints:
+            energy_eff: 0.443
+            carrier_ratios.carrier_in_2.power: 0.025
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                energy_cap: 0
+                om_annual: 0
+                om_prod: 0
+            GHG_emissions:
+                om_prod: 7.8                                        # kgCO2/GJ(liquid fuel)
+
+
+
+    BtL_HEFA:
+        essentials:
+            name: 'BtL_HEFA'
+            color: Chartreuse
+            parent: conversion_plus
+            carrier_in: Rapeseed_oil
+            carrier_in_2: hydrogen
+            carrier_in_3: power
+            primary_carrier_in: Rapeseed_oil
+            carrier_out: liquid_fuel
+        constraints:
+            energy_eff: 0.79
+            carrier_ratios.carrier_in_2.hydrogen: 0.1
+            carrier_ratios.carrier_in_3.power: 0.007
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                energy_cap: 0
+                om_annual: 0
+                om_prod: 0
+            GHG_emissions:
+                om_prod: 45.15                                      # kgCO2/GJ(liquid fuel)
+
+
+
+    BtL_CHJ:
+        essentials:
+            name: 'BtL_CHJ'
+            color: pink
+            parent: conversion_plus
+            carrier_in: Rapeseed_oil
+            carrier_in_2: hydrogen
+            carrier_in_3: power
+            primary_carrier_in: Rapeseed_oil
+            carrier_out: liquid_fuel
+        constraints:
+            energy_eff: 0.78
+            carrier_ratios.carrier_in_2.hydrogen: 0.0365
+            carrier_ratios.carrier_in_3.power: 0.008
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                energy_cap: 0
+                om_annual: 0
+                om_prod: 0
+            GHG_emissions:
+                om_prod: 53                                         # kgCO2/GJ(liquid fuel)
+
+
+
+    BtL_AtJ_starch:
+        essentials:
+            name: 'BtL_AtJ_starch'
+            color: CadetBlue
+            parent: conversion_plus
+            carrier_in: starch
+            carrier_in_2: hydrogen
+            carrier_in_3: power
+            primary_carrier_in: starch
+            carrier_out: liquid_fuel
+        constraints:
+            energy_eff: 0.74
+            carrier_ratios.carrier_in_2.hydrogen: 0.0167
+            carrier_ratios.carrier_in_3.power: 0.008
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                energy_cap: 0
+                om_annual: 0
+                om_prod: 0
+            GHG_emissions:
+                om_prod: 74                                         # kgCO2/GJ(liquid fuel)
+
+
+
+    BtL_AtJ_wood:
+        essentials:
+            name: 'BtL_AtJ_wood'
+            color: DarkKhaki
+            parent: conversion_plus
+            carrier_in: forest_residues
+            carrier_in_2: hydrogen
+            carrier_in_3: power
+            primary_carrier_in: forest_residues
+            carrier_out: liquid_fuel
+        constraints:
+            energy_eff: 0.362
+            carrier_ratios.carrier_in_2.hydrogen: 0.028
+            carrier_ratios.carrier_in_3.power: 0.019
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                energy_cap: 0
+                om_annual: 0
+                om_prod: 0
+            GHG_emissions:
+                om_prod: 21.4                                       # kgCO2/GJ(liquid fuel)
+

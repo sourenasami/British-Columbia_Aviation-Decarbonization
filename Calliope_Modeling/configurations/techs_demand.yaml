@@ -1,0 +1,21 @@
+# This file defines demand technologies
+
+techs:
+
+    demand_jet_fuel:
+        essentials:
+            name: 'demand_jet_fuel'
+            color: Purple
+            parent: demand
+            carrier: liquid_fuel
+
+
+    demand_power:
+        essentials:
+            name: 'demand_power'
+            color: Red
+            parent: demand
+            carrier: power
+        constraints:
+            resource: -100000000
+            force_resource: false

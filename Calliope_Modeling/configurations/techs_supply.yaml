@@ -1,0 +1,125 @@
+# This file defines supply sources
+
+techs:
+
+    Coal:
+        essentials:
+            name: 'Coal'
+            color: Black
+            parent: supply
+            carrier: coal
+        constraints:
+            resource: inf
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                om_con: 0
+
+
+    NG:
+        essentials:
+            name: 'Grid_NG'
+            color: yellow
+            parent: supply
+            carrier: NG
+        constraints:
+            resource: inf
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                om_con: 0
+
+
+    forest_residues:
+        essentials:
+            name: 'forest_residues'
+            color: CadetBlue
+            parent: supply
+            carrier: forest_residues
+        constraints:
+            resource: inf
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                om_con: 0
+
+
+
+    Rapeseed_oil:
+        essentials:
+            name: 'Rapeseed_oil'
+            color: CadetBlue
+            parent: supply
+            carrier: Rapeseed_oil
+        constraints:
+            resource: inf
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                om_con: 0
+
+
+    Starch:
+        essentials:
+            name: 'Starch'
+            color: DarkOrange
+            parent: supply
+            carrier: starch
+        constraints:
+            resource: inf
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                om_con: 0
+
+
+    Renewable_electricity:
+        essentials:
+            name: 'Renewable_electricity'
+            color: Blue
+            parent: supply
+            carrier: electricity
+        constraints:
+            resource: inf
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                om_con: 0
+
+
+    Power_grid:
+        essentials:
+            name: 'Grid_power'
+            color: Indigo
+            parent: supply
+            carrier: power
+        constraints:
+            resource: inf
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                om_con: 0
+
+
+    Renewable_H2:
+        essentials:
+            name: 'Renewable_H2'
+            color: Blue
+            parent: supply
+            carrier: hydrogen
+        constraints:
+            resource: inf
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                om_con: 0
+
+

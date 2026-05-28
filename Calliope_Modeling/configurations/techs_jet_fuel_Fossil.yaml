@@ -1,0 +1,76 @@
+# This file contains jet fuel production processes from fossil feedstocks
+
+
+techs:
+
+    CtL+CCS_aggressive:
+        essentials:
+            name: 'CtL+CCS_aggressive'
+            color: DarkGoldenRod
+            parent: conversion_plus
+            carrier_in: coal
+            carrier_out: liquid_fuel
+            carrier_out_2: power
+            primary_carrier_out: liquid_fuel
+        constraints:
+            energy_eff: 0.447
+            carrier_ratios.carrier_out_2.power: 0.0154
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                energy_cap: 0
+                om_annual: 0
+                om_prod: 0
+            GHG_emissions:
+                om_prod: 110.5                                      # kgCO2/GJ(liquid fuel)
+
+
+
+
+    GtL_ATR+CCS_aggressive:
+        essentials:
+            name: 'GtL_ATR+CCS_aggressive'
+            color: DarkOrchid
+            parent: conversion_plus
+            carrier_in: NG
+            carrier_in_2: power
+            primary_carrier_in: NG
+            carrier_out: liquid_fuel
+        constraints:
+            energy_eff: 0.474
+            carrier_ratios.carrier_in_2.power: 0.014
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                energy_cap: 0
+                om_annual: 0
+                om_prod: 0
+            GHG_emissions:
+                om_prod: 108.1                                      # kgCO2/GJ(liquid fuel)
+
+
+
+    GtL_SMR+CCS_aggressive:
+        essentials:
+            name: 'GtL_SMR+CCS_aggressive'
+            color: DarkSlateGray
+            parent: conversion_plus
+            carrier_in: NG
+            carrier_in_2: power
+            primary_carrier_in: NG
+            carrier_out: liquid_fuel
+        constraints:
+            energy_eff: 0.386
+            carrier_ratios.carrier_in_2.power: 0.034
+            lifetime: 25
+        costs:
+            monetary:
+                interest_rate: 0.1
+                energy_cap: 0
+                om_annual: 0
+                om_prod: 0
+            GHG_emissions:
+                om_prod: 119.8                                       # kgCO2/GJ(liquid fuel)
+

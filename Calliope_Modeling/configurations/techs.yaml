@@ -1,0 +1,8 @@
+# This file aggregate all techs defined
+
+import:
+
+  - 'techs_jet_fuel_Fossil.yaml'
+  - 'techs_jet_fuel_SAF.yaml'
+  - 'techs_supply.yaml'
+  - 'techs_demand.yaml'
