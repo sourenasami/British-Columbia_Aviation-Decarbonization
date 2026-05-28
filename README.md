@@ -31,7 +31,7 @@ limiting the production capacity of each technology under the base scenario.
 
 ---
 
-## Economic uncertainty analysis
+## Python economic uncertainty
 
 Within the _Python_Economic_Uncertainty_ directory, Python files have been developed to simulate the effect of
 uncertain input cost parameters on the economic behavior of the system. A Probabilistic Nonparametric Uncertainty method
