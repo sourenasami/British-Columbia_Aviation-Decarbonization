@@ -1,4 +1,4 @@
-# British Columbia-Python-Calliope
+# British Columbia's Aviation Decarbonization
 This repository contains Python and Calliope-based models designed to assess the potential of British Columbia, Canada,
 to meet local jet fuel demand from 2030 to 2050, comparing both fossil and renewable pathways.
 
