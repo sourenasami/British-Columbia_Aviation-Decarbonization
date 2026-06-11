@@ -52,8 +52,8 @@ produced synthetic jet fuel with conventional Jet A-1.
 
 ## Authors
 
-Sourena Sami
-Andrew Rowe
+Sourena Sami  
+Andrew Rowe  
 Peter Wild  
 University of Victoria, Department of Mechanical Engineering, Institute for Integrated Energy Systems (IESVic)  
 Email: samisourena@gmail.com
