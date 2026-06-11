@@ -54,6 +54,7 @@ produced synthetic jet fuel with conventional Jet A-1.
 
 - Sourena Sami
 - Andrew Rowe
-- Peter Wild  
-University of Victoria, Department of Mechanical Engineering, Institute for Integrated Energy Systems (IESVic)
+- Peter Wild
+
+University of Victoria, Department of Mechanical Engineering, Institute for Integrated Energy Systems (IESVic)  
 Email: samisourena@gmail.com
